@@ -46,37 +46,24 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Trang bán hàng</h1>
-                        <a href="banhang.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i>Tạo đơn hàng</a>
-                    </div>
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Trang bán hàng</h1>
+    </div>
 
-                 
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
+   <?php
+if(isset($_GET['page']) && $_GET['page'] == 'banhang'){
+    include 'banhang.php';
+}
+?>
 
 
+</div>
+<!-- /.container-fluid -->
 
-
-                        </div>
-
-                        <div class="col-lg-6 mb-4">
-
-    
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
@@ -92,6 +79,5 @@
 
 
 
-<?php include 'include/footer.php'; ?>
 
 
