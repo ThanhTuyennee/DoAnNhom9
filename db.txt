@@ -3,7 +3,7 @@ CREATE TABLE LoaiBanh (
     TenLoaiBanh VARCHAR(100),
 );
 
-CREATE TABLE Banh (
+CREATE TABLE ThongTinBanh (
     MaBanh INT AUTO_INCREMENT PRIMARY KEY,
     TenBanh VARCHAR(100),
     Gia DECIMAL(10,2),
@@ -59,9 +59,9 @@ VALUES
 ('Bánh donut');
 
 -- =========================
--- 2️⃣ Bảng Bánh
+-- 2️⃣ Bảng Thong Tin Bánh
 -- =========================
-INSERT INTO Banh (TenBanh, Gia, SoLuong, HinhAnh, MaLoaiBanh)
+INSERT INTO Thong Tin Banh (TenBanh, Gia, SoLuong, HinhAnh, MaLoaiBanh)
 VALUES
 ('Bánh kem dâu',        50000, 20, 'img/banhkemdau.jpg', 1),
 ('Bánh su kem',         25000, 30, 'img/banhsukem.jpg', 1),
