@@ -141,7 +141,7 @@ function renderCart() {
   let total = 0;
 
   cart.forEach((item, index) => {
-    let itemTotal = item.qty * item.price;
+    let itemTotal = item.qty * item.price; 
     total += itemTotal;
     tbody.innerHTML += `
       <tr>
